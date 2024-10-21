@@ -15,7 +15,9 @@
     "feelslike": "Feels like",
     "visKm": "Visibility",
     "dewpointC": "Dewpoint",
-    "update": "updated as of "
+    "update": "updated as of ",
+    "more": "More",
+    "hourlyInfo": "Hourly Info"
     
 
 }

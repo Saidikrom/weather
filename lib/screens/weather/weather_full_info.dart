@@ -44,7 +44,6 @@ class _WeatherFullInfoState extends State<WeatherFullInfo> {
 
   Future onRefresh() async {
     context.read<WeatherBloc>().add(FetchWeather(widget.city));
-    
   }
 
   @override
@@ -103,7 +102,7 @@ class _WeatherFullInfoState extends State<WeatherFullInfo> {
                         data: state.weather,
                       ),
                       LeftText(
-                        text: "Hourly info".tr(),
+                        text: "hourlyInfo".tr(),
                       ),
                       HourlyInfo(
                           data: state.weather, hasInternet: widget.hasInternet),

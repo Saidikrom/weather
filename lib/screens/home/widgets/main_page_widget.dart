@@ -130,7 +130,7 @@ class _MainPageWidgetState extends State<MainPageWidget> {
                         onTapFunction: () => Navigator.pushNamed(
                             context, '/weather',
                             arguments: state.weather.location!.name),
-                        text: "More"),
+                        text: "more".tr()),
                   ),
                   LeftText(
                     text: "nextDays".tr(),
