@@ -14,8 +14,6 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
 
   WeatherBloc(this.weatherRepository) : super(WeatherInitial()) {
     on<FetchWeather>(onFetchWeather);
-    // on<SaveLocation>(onSaveLocation);
-    // on<UnsaveLocation>(onUnsaveLocation);
   }
 
   Future<void> onFetchWeather(
@@ -41,17 +39,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
 
       final List<Uint8List> imageBytesList =
           await weatherRepository.fetchImages(iconUrls);
-
-      // final List<String> iconHourUrls = weather.forecast!.forecastday
-      //     .expand((day) => day.hour.map((hour) => hour.condition!.icon!))
-      //     .toList();
-
-      // final List<Uint8List> imageHourBytesList = await weatherRepository
-      //     .fetchImages(iconHourUrls.map((e) => 'https:$e').toList());
-
-      // print("1-${iconHourUrls.length}");
       imgBox.put(event.city, imageBytesList);
-      // imgHourBox.put("hourly", imageHourBytesList);
 
       emit(WeatherLoaded(weather: weather));
     } catch (error) {

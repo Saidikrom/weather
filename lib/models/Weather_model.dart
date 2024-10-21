@@ -232,7 +232,7 @@ class Forecast {
     }
 
     Map<String, dynamic> toJson() => {
-        "forecastday": forecastday.map((x) => x?.toJson()).toList(),
+        "forecastday": forecastday.map((x) => x.toJson()).toList(),
     };
 
 }
@@ -267,7 +267,7 @@ class Forecastday {
         "date_epoch": dateEpoch,
         "day": day?.toJson(),
         "astro": astro?.toJson(),
-        "hour": hour.map((x) => x?.toJson()).toList(),
+        "hour": hour.map((x) => x.toJson()).toList(),
     };
 
 }

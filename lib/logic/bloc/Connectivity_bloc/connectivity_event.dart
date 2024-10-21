@@ -10,7 +10,7 @@ sealed class ConnectivityEvent extends Equatable {
 class CheckConnection extends ConnectivityEvent {}
 
 class UpdateConnectionStatus extends ConnectivityEvent {
-  final ConnectivityResult result; // Accept a single result
+  final ConnectivityResult result; 
 
   UpdateConnectionStatus(this.result);
 

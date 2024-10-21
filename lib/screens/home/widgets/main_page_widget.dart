@@ -11,7 +11,6 @@ import '../../../core/constants/p_m_const.dart';
 import '../../../logic/bloc/weather_bloc/weather_bloc.dart';
 import '../../../logic/bloc/weather_bloc/weather_event.dart';
 import '../../../logic/bloc/weather_bloc/weather_state.dart';
-import '../../../services/boxes/box.dart';
 import '../../../widgets/custom_button.dart';
 import 'custom_loading.dart';
 import 'day_details.dart';

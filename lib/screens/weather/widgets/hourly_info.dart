@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:weather/models/Weather_model.dart';
-import 'package:weather/services/boxes/box.dart';
 
 import '../../../core/constants/font_const.dart';
 import '../../../core/constants/p_m_const.dart';

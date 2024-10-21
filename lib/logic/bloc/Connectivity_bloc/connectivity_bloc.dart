@@ -11,19 +11,18 @@ class ConnectivityBloc extends Bloc<ConnectivityEvent, ConnectivityState> {
   StreamSubscription<List<ConnectivityResult>>? _connectivitySubscription;
 
   ConnectivityBloc(this._connectivity) : super(ConnectivityInitial()) {
-    // Check initial connectivity status
+
     _connectivity.checkConnectivity().then((result) {
       add(UpdateConnectionStatus(
           result.isNotEmpty ? result[0] : ConnectivityResult.none));
     });
 
-    // Subscribe to connectivity changes
     _connectivitySubscription =
         _connectivity.onConnectivityChanged.listen((results) {
       if (results.isNotEmpty) {
-        add(UpdateConnectionStatus(results[0])); // Handle the first result
+        add(UpdateConnectionStatus(results[0])); 
       } else {
-        add(UpdateConnectionStatus(ConnectivityResult.none)); // No connectivity
+        add(UpdateConnectionStatus(ConnectivityResult.none));
       }
     });
 

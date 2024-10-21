@@ -29,7 +29,6 @@ void main() async {
   await Hive.initFlutter();
   weatherBox = await Hive.openBox('weatherBox');
   imgBox = await Hive.openBox('img');
-  imgHourBox = await Hive.openBox('imgHour');
   saveCitiesBox = await Hive.openBox('savedCities');
   runApp(
     MultiBlocProvider(
