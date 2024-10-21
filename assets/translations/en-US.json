@@ -1,0 +1,21 @@
+{
+    "title": "Weather App",
+    "savedPage": "Saved Cities",
+    "settings": "Settings",
+    "search": "Search",
+    "themeMode": "Theme",
+    "language": "Language",
+    "weatherDetails": "Weather Details",
+    "nextDays": "Next Days",
+    "english": "English",
+    "russian": "Russian",
+    "noInternet": "No internet connection",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "feelslike": "Feels like",
+    "visKm": "Visibility",
+    "dewpointC": "Dewpoint",
+    "update": "updated as of "
+    
+
+}
